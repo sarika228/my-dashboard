@@ -1,0 +1,90 @@
+.container {
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #f9f9f9;
+  }
+  
+  .activeTab {
+    border-bottom: 2px solid green;
+    color: green;
+  }
+  
+  .headingRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .title{
+    margin:50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button{
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+    padding:10px
+}
+  
+  .headingItem {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    min-width: 120px; 
+  }
+  .successMessage{
+    text-align: center;
+    justify-content: center;
+  }
+  .content {
+    overflow-x: auto;
+  }
+  
+  .dataTable {
+    overflow-x: auto; 
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  .cell {
+    flex: 1;
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  @media (max-width: 768px) {
+    .headingRow, .row {
+      flex-direction: row;
+    }
+  
+    .headingItem, .cell {
+      min-width: 100px;
+    }
+  }
+  
